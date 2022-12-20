@@ -37,8 +37,9 @@ int main() {
      e= sqrt(pow(((b-a)/2),2));
     }while(e>= 0.000001);
 
-    cout.precision(4);
-    cout << x;
+   // cout.precision(4);
+    x*=1000;
+    cout << x/1000;
    // cout << funzione(x);
 
 
