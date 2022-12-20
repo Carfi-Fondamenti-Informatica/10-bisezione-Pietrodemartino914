@@ -38,7 +38,7 @@ int main() {
         e=sqrt(pow(e,2));
     }while(e>=(1/ pow(M_E,6)));
 
-    cout.precision(4);
+  //  cout.precision(4);
     cout << x;
    // cout << funzione(x);
 
