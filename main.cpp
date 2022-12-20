@@ -1,3 +1,12 @@
+#include <iostream>
+using namespace std;
+#include "math.h"
+
+float funzione(float a){
+    float risultato=(a*a*(cos(a))+1);
+    return risultato ;
+}
+
 
 int main() {
     float a,b,e,x;
