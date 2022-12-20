@@ -1,15 +1,6 @@
-#include <iostream>
-using namespace std;
-#include "math.h"
-
-float funzione(float a){
-    float risultato=(a*a*(cos(a))+1);
-    return risultato ;
-}
-
 
 int main() {
-    float a,b,e=0,x=0;
+    float a,b,e,x;
     do {
         cout << "inserire estremi" << endl;
         cin >> a;
@@ -27,18 +18,17 @@ int main() {
             break;
         }
 
-        if ((funzione(x)>0)){
-            a=x;
-        }else if (funzione(x)<0){
+        if ((funzione(x))<0){
             b=x;
+        }else {
+            a=x;
         }
 
 
-     e=(b-a)/2;
-        e=sqrt(pow(e,2));
-    }while(e>=(1/ pow(M_E,6)));
+     e= sqrt(pow(((b-a)/2),2));
+    }while(e>=(pow(M_E,-6)));
 
-  //  cout.precision(4);
+    //cout.precision(4);
     cout << x;
    // cout << funzione(x);
 
