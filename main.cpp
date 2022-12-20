@@ -2,14 +2,14 @@
 using namespace std;
 #include "math.h"
 
-float funzione(float a){
+double funzione(double a){
     float risultato=(a*a*(cos(a))+1);
     return risultato ;
 }
 
 
 int main() {
-    float a,b,e,x;
+    double a,b,e,x;
     do {
         cout << "inserire estremi" << endl;
         cin >> a;
@@ -35,9 +35,9 @@ int main() {
 
 
      e= sqrt(pow(((b-a)/2),2));
-    }while(e>=(pow(M_E,-6)));
+    }while(e>= 0.000001);
 
-    //cout.precision(4);
+    cout.precision(4);
     cout << x;
    // cout << funzione(x);
 
